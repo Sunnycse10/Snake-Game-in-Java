@@ -45,41 +45,41 @@ public class GamePanel extends JPanel implements ActionListener,KeyListener{
 	{
 		if(play!=true)
 		{
-		label1= new JLabel();
-		label1.setFont(new Font("Dialog",Font.BOLD,20));
-		label1.setText("WELCOME TO SNAKE GAME");
-		label1.setForeground(Color.RED);
-		label1.setBounds(150, 50, 400, 50);
-		
-		
-		quitbutton= new JButton();
-		quitbutton.setBounds(200, 250, 150, 50);
-		quitbutton.setBackground(Color.cyan);
-		quitbutton.setFocusable(false);
-		quitbutton.setFont(new Font("Dialog",Font.BOLD,20));
-		quitbutton.setText("QUIT");
-		quitbutton.addActionListener(this);
-		
-		startbutton= new JButton();
-		startbutton.setBounds(200, 150, 150, 50);
-		startbutton.setBackground(Color.cyan);
-		startbutton.setFocusable(false);
-		startbutton.setFont(new Font("Dialog",Font.BOLD,20));
-		startbutton.setText("PLAY");
-		startbutton.addActionListener(this);
-		
-		helpbutton= new JButton();
-		helpbutton.setBounds(200, 350, 150, 50);
-		helpbutton.setBackground(Color.cyan);
-		helpbutton.setFocusable(false);
-		helpbutton.setFont(new Font("Dialog",Font.BOLD,20));
-		helpbutton.setText("HELP");
-		//helpbutton.addActionListener(this);
-		
-		this.add(startbutton);
-		this.add(quitbutton);
-		this.add(label1);
-		this.add(helpbutton);
+			label1= new JLabel();
+			label1.setFont(new Font("Dialog",Font.BOLD,20));
+			label1.setText("WELCOME TO SNAKE GAME");
+			label1.setForeground(Color.RED);
+			label1.setBounds(150, 50, 400, 50);
+
+
+			quitbutton= new JButton();
+			quitbutton.setBounds(200, 250, 150, 50);
+			quitbutton.setBackground(Color.cyan);
+			quitbutton.setFocusable(false);
+			quitbutton.setFont(new Font("Dialog",Font.BOLD,20));
+			quitbutton.setText("QUIT");
+			quitbutton.addActionListener(this);
+
+			startbutton= new JButton();
+			startbutton.setBounds(200, 150, 150, 50);
+			startbutton.setBackground(Color.cyan);
+			startbutton.setFocusable(false);
+			startbutton.setFont(new Font("Dialog",Font.BOLD,20));
+			startbutton.setText("PLAY");
+			startbutton.addActionListener(this);
+
+			helpbutton= new JButton();
+			helpbutton.setBounds(200, 350, 150, 50);
+			helpbutton.setBackground(Color.cyan);
+			helpbutton.setFocusable(false);
+			helpbutton.setFont(new Font("Dialog",Font.BOLD,20));
+			helpbutton.setText("HELP");
+			//helpbutton.addActionListener(this);
+
+			this.add(startbutton);
+			this.add(quitbutton);
+			this.add(label1);
+			this.add(helpbutton);
 		}
 		this.setLayout(null);
 		this.setPreferredSize(new Dimension(SCREEN_WIDTH,SCREEN_HEIGHT));
@@ -87,7 +87,7 @@ public class GamePanel extends JPanel implements ActionListener,KeyListener{
 		this.setFocusable(true);
 		this.addKeyListener(this);
 		rungame();
-		
+
 	}
 
 	public void rungame() {
