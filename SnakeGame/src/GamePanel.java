@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.concurrent.ThreadLocalRandom;
 
 import javax.swing.JButton;
@@ -32,8 +33,8 @@ public class GamePanel extends JPanel implements ActionListener,KeyListener{
 	private boolean play=false;
 	ArrayList<Integer>xarray= new ArrayList<Integer>();
 	ArrayList<Integer>yarray= new ArrayList<Integer>();
-	ArrayList<Integer>freeX= new ArrayList<Integer>();
-	ArrayList<Integer>freeY= new ArrayList<Integer>();
+	//ArrayList<Integer>freeX= new ArrayList<Integer>();
+	//ArrayList<Integer>freeY= new ArrayList<Integer>();
 	public int[][] xy= new int[24][24];
 	private Timer time;
 	private int bodyparts=6;
@@ -324,6 +325,7 @@ public class GamePanel extends JPanel implements ActionListener,KeyListener{
 			{
 				direction='L';
 				dirX=-25;
+				
 			}
 			break;
 		case KeyEvent.VK_RIGHT:
